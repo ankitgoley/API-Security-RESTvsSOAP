@@ -277,7 +277,7 @@ In order to access REST API if you require any certificate for authentication, y
 
 You can setup with burp proxy for more fuzzing or check some security issues in more efficient way.
 
-Screenshot 2021-06-17 at 2.59.26 AM.png<img width="398" alt="Screenshot 2021-06-17 at 2 59 26 AM" src="https://user-images.githubusercontent.com/76476308/122296492-1ac1b800-cf18-11eb-9c98-d084d98602ca.png">           
+<img width="398" alt="Screenshot 2021-06-17 at 2 59 26 AM" src="https://user-images.githubusercontent.com/76476308/122296492-1ac1b800-cf18-11eb-9c98-d084d98602ca.png">           
             
 # Note
 Now you can start with security testing with POSTMAN as well as Burp. To find security bugs related to WS try payloads accordingly. Some of the issues are listed below:
@@ -289,7 +289,37 @@ Now you can start with security testing with POSTMAN as well as Burp. To find se
                    5.XML Bomb (DoS)
                    6.Non-encoded output
                    7.Basic Authentication
-                   8.Authentication based attacks:
+                   8.Authentication based attacks
+                        a.Replay attacks
+                        b.Improper Implementation
+                        c.user account lock out
+                        d.access id validations
+                   9.SSL test scan (User SSLScan, OpenSSL, SSLyze any one of them test SSL related issues)
+                        a.Identifying weak cipher
+                        b.Insecure protocols supported
+                        c.Valid Certificate- Expiry/self-signed/Trusted CA
+                        d.Hashing Algorithm Support
+            
+# Tools
+
+            1.SOAP UI Pro
+            2.IBM AppScan
+            3.Burp Suite
+            4.SOA Client
+            5.POSTMAN etc.
+            
+            
+# References
+
+https://www.owasp.org/
+https://www.soapui.org/
+https://docs.oracle.com/javaee/6/tutorial/doc/gijqy.html
+https://www.tutorialspoint.com/webservices/index.htm
+https://www.w3schools.com/xml/xml_services.asp
+https://resources.infosecinstitute.com/
+https://en.wikipedia.org/wiki/Web_service
+https://www.guru99.com/comparison-between-web-services.html
+
            
             
             
