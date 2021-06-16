@@ -83,7 +83,7 @@ It is really an XML formatted language used by UDDI. It describes the capabiliti
 
 A WSDL document has a definitions element that contains the other five elements, types, message, portType, binding and service. The following sections describe the features of the generated client code.
 
-Contains the definition of one or more services. JDeveloper generates the following attribute declarations for this section:
+# Contains the definition of one or more services. JDeveloper generates the following attribute declarations for this section:
             1.targetNamespace is the logical namespace for information about this service. WSDL documents can import other WSDL documents, and setting targetNamespace to a unique value ensures that the namespaces do not clash.
             2.xmlns is the default namespace of the WSDL document, and it is set to http://schemas.xmlsoap.org/wsdl/.
             3.All the WSDL elements, such as <definitions>, <types> and <message> reside in this namespace.
