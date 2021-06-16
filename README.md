@@ -199,7 +199,7 @@ Now capture the request and start testing-
 <img width="530" alt="Screenshot 2021-06-17 at 2 40 39 AM" src="https://user-images.githubusercontent.com/76476308/122294182-6e7ed200-cf15-11eb-84be-1cc217fe9081.png">
 
 # Grey box testing
-# Case
+# Case:
 In Grey box testing – you will have following information to begin with the testing.
 If SOAP UI project file is shared with you then directly you can import that file with SAOP UI tool. It will give you all related information to begin with the testing and proceed for the same.
 
@@ -209,8 +209,9 @@ And project file will be loaded into SOAP UI tool and you can access WS and its 
 
 <img width="280" alt="Screenshot 2021-06-17 at 2 42 59 AM" src="https://user-images.githubusercontent.com/76476308/122294522-c1f12000-cf15-11eb-81bc-625e9861f1ce.png">
 
-a>If you have WSDL file and sample request/response with you. You can proceed with the testing as I already explain in black box testing tab.
-b>If web service is using any kind of authentication to receive the successful response. We can configure the authentication process in SOAP UI as shown below
+a)If you have WSDL file and sample request/response with you. You can proceed with the testing as I already explain in black box testing tab.
+
+b)If web service is using any kind of authentication to receive the successful response. We can configure the authentication process in SOAP UI as shown below
 
 
 
