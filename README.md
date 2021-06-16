@@ -213,6 +213,53 @@ a)If you have WSDL file and sample request/response with you. You can proceed wi
 
 b)If web service is using any kind of authentication to receive the successful response. We can configure the authentication process in SOAP UI as shown below
 
+<img width="401" alt="Screenshot 2021-06-17 at 2 45 09 AM" src="https://user-images.githubusercontent.com/76476308/122294796-0f6d8d00-cf16-11eb-923f-19a2243166ab.png">
+
+
+# REST Based API
+This was designed specifically for working with components such as media components, files, or even objects on a particular hardware device. Any web service that is defined on the principles of REST can be called a RESTful web service. A Restful service would use the normal HTTP verbs of GET, POST, PUT and DELETE for working with the required components.
+
+RESTful Web Services are basically REST Architecture based Web Services. In REST Architecture everything is a resource. RESTful web services are light weight, highly scalable and maintainable and are very commonly used to create APIs for web-based applications.
+In the REST architectural style, data and functionality are considered resources and are accessed using Uniform Resource Identifiers (URIs), typically links on the Web.
+
+# Example
+http://example.com/api/books - resource representing a list of books. You can (HTTP) GET this resource, meaning to retrieve the whole list. You can also GET the http://example.com/api/books/7 resource, fetching the details of 7th book inside books resource.
+
+# Advantages
+
+            1.Fast: RESTful Web Services are fast because there is no strict specification like SOAP. It consumes less bandwidth and resource.
+            2.Language and Platform independent: RESTful web services can be written in any programming language and executed in any platform.
+            3.Can use SOAP: RESTful web services can use SOAP web services as the implementation.
+            4.Permits different data format: RESTful web service permits different data format such as Plain Text, HTML, XML and JSON.
+            
+# Components
+
+            1.WADL: - Web Application Description Language is an XML document, which describes what resources of an application can be accessed by a client. WADL is considered as the REST equivalent of SOAP's WSDL.
+            2.Use of HTTP methods (GET, POST, PUT and DELETE) as the primary verb for the requested operation.
+            
+ 
+# Security Testing of REST API
+If we have WADL or URI of the REST web service- we can directly import with SOAP UI tool as shown below:
+
+<img width="398" alt="Screenshot 2021-06-17 at 2 49 21 AM" src="https://user-images.githubusercontent.com/76476308/122295308-ab979400-cf16-11eb-8746-ed1c71408ffd.png">
+
+We have uploaded the sample WADL file which comes with SOAP UI tool at following path: <your-user-folder>/SoapUI-Tutotrials/WSDL-WADL/sample-service.wadl
+            
+<img width="396" alt="Screenshot 2021-06-17 at 2 50 05 AM" src="https://user-images.githubusercontent.com/76476308/122295388-c23deb00-cf16-11eb-9e64-1c050fb66200.png">
+            
+After this you require sample request(data) to begin with the testing process. If REST is using any kind of authentication, you can set up with SoapUI.
+
+<img width="400" alt="Screenshot 2021-06-17 at 2 51 00 AM" src="https://user-images.githubusercontent.com/76476308/122295508-e699c780-cf16-11eb-8ee6-dbbf533f4957.png">
+
+You can start testing REST API with end point URL and sample request/response. We can also use POSTMAN tool for testing REST API.
+            
+            
+            
+    
+            
+
+            
+
 
 
 
