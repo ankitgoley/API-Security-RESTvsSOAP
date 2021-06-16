@@ -40,13 +40,9 @@ SOAP is a protocol which was designed before REST and came into the picture. The
 # Sample SOAP Request
 
 POST /ws/ws.asmx HTTP/1.1
-
 Host: www.example.com
-
 Content-Type: text/xml; charset=utf-8
-
 Content-Length: length
-
 SOAPAction: http://www.example.com/ws/IsValidUser
 
 <?xml version="1.0" encoding="utf-8"?>
@@ -72,6 +68,30 @@ Content-Length: length
 </IsValidUserResponse>
 </soap:Body>
 </soap:Envelope>
+
+# WSDL (Web Services Description Language)
+It is really an XML formatted language used by UDDI. It describes the capabilities of the web service as the collection of communication end points with the ability of exchanging messages. Or in simple words “Web Services Description Language is an XML-based language for describing Web services and how to access them.
+
+            1.WSDL is used to describe Web services
+            2.WSDL is used to locate Web services.
+            3.WSDL describes the set of operations the web service provides.
+            4.WSDL is a set of rules to describe your web service & how you can communicate with my web services, how & what messages will be sent in SOAP envelope.
+
+# Structure of WSDL
+
+<img width="395" alt="Screenshot 2021-06-17 at 2 15 03 AM" src="https://user-images.githubusercontent.com/76476308/122290904-d9c6a500-cf11-11eb-986f-e201eb26d833.png">
+
+A WSDL document has a definitions element that contains the other five elements, types, message, portType, binding and service. The following sections describe the features of the generated client code.
+
+Contains the definition of one or more services. JDeveloper generates the following attribute declarations for this section:
+1.targetNamespace is the logical namespace for information about this service. WSDL documents can import other WSDL documents, and setting targetNamespace to a unique value ensures that the namespaces do not clash.
+2.xmlns is the default namespace of the WSDL document, and it is set to http://schemas.xmlsoap.org/wsdl/.
+3.All the WSDL elements, such as <definitions>, <types> and <message> reside in this namespace.
+4.xmlns:xsd and xmlns:soap are standard namespace definitions that are used for specifying SOAP-specific information as well as data types.
+5.xmlns:tns stands for this namespace.
+6.xmlns:ns1 is set to the value of the schema targetNamespace, in the <types> section.
+      
+
 
   
        
