@@ -36,5 +36,36 @@ SOAP is a protocol which was designed before REST and came into the picture. The
  
 <img width="397" alt="Screenshot 2021-06-17 at 2 08 46 AM" src="https://user-images.githubusercontent.com/76476308/122290045-fca48980-cf10-11eb-8ab8-f0614081f48c.png">
 
+
+# Sample SOAP Request
+POST /ws/ws.asmx HTTP/1.1
+Host: www.example.com
+Content-Type: text/xml; charset=utf-8
+Content-Length: length
+SOAPAction: http://www.example.com/ws/IsValidUser
+
+<?xml version="1.0" encoding="utf-8"?>
+<soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+<soap:Body>
+<IsValidUser xmlns="http://www.example.com/ws/">
+<UserId>string</UserId>
+</IsValidUser>
+</soap:Body>
+</soap:Envelope>
+
+# SOAP Response
+HTTP/1.1 200 OK
+Content-Type: text/xml; charset=utf-8
+Content-Length: length
+
+<?xml version="1.0" encoding="utf-8"?>
+<soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+<soap:Body>
+<IsValidUserResponse xmlns="http://www.example.com/ws/">
+<IsValidUserResult>boolean</IsValidUserResult>
+</IsValidUserResponse>
+</soap:Body>
+</soap:Envelope>
+
   
        
