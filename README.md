@@ -92,6 +92,28 @@ A WSDL document has a definitions element that contains the other five elements,
             6.xmlns:ns1 is set to the value of the schema targetNamespace, in the <types> section.
       
 
+# Types
+All the schema types or data types defined here.
+# message
+This is a dependent element. Message is specified according to the data types defined in types element and used in side operation element later.
+# operation
+Collection of input, output, fault and other messages as specified in message element.
+# input message
+These are the parameters of the method used in SOAP request.
+# output message
+These are the parameters of the method used in SOAP response.
+# binding
+Describes how the operation is invoked by specifying concrete protocol and data format specifications for the operations and messages.
+# port
+It provides the physical path or location of web server so that service consumer can connect with service provider.
+# service
+Contains name of all the services provided by the service provider.
+
+# Sample WSDL file
+
+<img width="400" alt="Screenshot 2021-06-17 at 2 22 48 AM" src="https://user-images.githubusercontent.com/76476308/122291849-ef889a00-cf12-11eb-865a-4a22a3dacdf6.png">
+
+
 
   
        
