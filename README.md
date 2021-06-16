@@ -128,10 +128,9 @@ Now choosing one service provider again the service consumer generates a XML mes
 
 # Security Testing of SOAP Web Services - Setting up the testing environment
 The testing approach of web services is very much similar to the testing used in web applications. Web service security testing has been categorized in three types:
+
             1.Black Box Testing
-            
             2.Grey Box Testing
-            
             3.White Box Testing
          
 
