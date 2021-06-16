@@ -40,9 +40,13 @@ SOAP is a protocol which was designed before REST and came into the picture. The
 # Sample SOAP Request
 
 POST /ws/ws.asmx HTTP/1.1
+
 Host: www.example.com
+
 Content-Type: text/xml; charset=utf-8
+
 Content-Length: length
+
 SOAPAction: http://www.example.com/ws/IsValidUser
 
 <?xml version="1.0" encoding="utf-8"?>
