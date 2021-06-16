@@ -13,3 +13,15 @@ A web service is a unit of managed code that can be remotely invoked using HTTP,
             2.Platform Independent (Hardware and OS)
             3.Function Reusability
             4.Stateless communication
+
+# Type of web services
+            1. SOAP web services
+            2. RESTful web services
+           
+# SOAP
+SOAP is a protocol which was designed before REST and came into the picture. The main idea behind designing SOAP was to ensure that programs built on different platforms and programming languages could exchange data in an easy manner.
+Components of SOAP web services:
+            1. XML (Extensible Markup Language)
+            2. SOAP (Simple Object Access Protocol)
+            3. WSDL (Web Services Description Language)
+            4. UDDI (Universal Description, Discovery and Integration)
