@@ -32,6 +32,8 @@ SOAP is a protocol which was designed before REST and came into the picture. The
  
  # SOAP (Simple Object Access Protocol)
  It is a XML-based protocol that lets applications exchange information over HTTP. Web services use a SOAP format to send XML requests. A SOAP client sends a SOAP message to the server. The server responds back again with a SOAP message along with the requested service. The entire SOAP message is packed in a SOAP Envelope as shown below:
+ 
+ 
 <img width="397" alt="Screenshot 2021-06-17 at 2 08 46 AM" src="https://user-images.githubusercontent.com/76476308/122290045-fca48980-cf10-11eb-8ab8-f0614081f48c.png">
 
   
