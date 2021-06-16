@@ -257,6 +257,39 @@ You can start testing REST API with end point URL and sample request/response. W
 Enter End Point URL and choose method accordingly.
             
 <img width="489" alt="Screenshot 2021-06-17 at 2 54 51 AM" src="https://user-images.githubusercontent.com/76476308/122295933-6b84e100-cf17-11eb-9f20-2d61c9b4632c.png">
+            
+Setup authentication and its type- if WS is using authentication mechanism while processing the request.
+            
+<img width="400" alt="Screenshot 2021-06-17 at 2 56 10 AM" src="https://user-images.githubusercontent.com/76476308/122296070-9838f880-cf17-11eb-8b2f-a9132425242e.png">
+            
+            
+You can add headers which are supported by WS as shown below.
+
+<img width="397" alt="Screenshot 2021-06-17 at 2 56 50 AM" src="https://user-images.githubusercontent.com/76476308/122296148-b272d680-cf17-11eb-9ccd-c4e1fc545063.png">
+
+Now form the request or paste it (whatever the data we have) under body tab and define what we are going to do with this API.
+            
+<img width="399" alt="Screenshot 2021-06-17 at 2 57 52 AM" src="https://user-images.githubusercontent.com/76476308/122296261-d46c5900-cf17-11eb-8505-0b584d012892.png">
+
+In order to access REST API if you require any certificate for authentication, you can setup as shown below.
+
+<img width="397" alt="Screenshot 2021-06-17 at 2 58 36 AM" src="https://user-images.githubusercontent.com/76476308/122296368-f49c1800-cf17-11eb-8dbd-dc28498db158.png">
+
+You can setup with burp proxy for more fuzzing or check some security issues in more efficient way.
+
+Screenshot 2021-06-17 at 2.59.26 AM.png<img width="398" alt="Screenshot 2021-06-17 at 2 59 26 AM" src="https://user-images.githubusercontent.com/76476308/122296492-1ac1b800-cf18-11eb-9c98-d084d98602ca.png">           
+            
+# Note
+Now you can start with security testing with POSTMAN as well as Burp. To find security bugs related to WS try payloads accordingly. Some of the issues are listed below:
+            
+                   1.Fuzzing/XSS/SQLi
+                   2.Malformed XML
+                   3.Malicious attachment/ File upload
+                   4.Xpath Injection
+                   5.XML Bomb (DoS)
+                   6.Non-encoded output
+                   7.Basic Authentication
+                   8.Authentication based attacks:
            
             
             
