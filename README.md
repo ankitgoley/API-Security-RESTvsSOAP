@@ -132,6 +132,89 @@ The testing approach of web services is very much similar to the testing used in
             1.Black Box Testing
             2.Grey Box Testing
             3.White Box Testing
+            
+            
+# Black box testing
+For a Black box assessment, at the very least, the penetration tester will need the Web Service Description Language (WSDL) file to begin with the testing.
+
+Let’s say that you need to test web services associated with some application like (http://www.test.com). It’s a black box testing and you don’t have any details related to web services.
+
+Now you can start with fingerprinting of web services. We can use google to fingerprint the WSDL file of that web application using special notations such as filetype as shown in below screenshot.
+
+<img width="392" alt="Screenshot 2021-06-17 at 2 30 05 AM" src="https://user-images.githubusercontent.com/76476308/122292770-f7950980-cf13-11eb-9d47-e010312bf34b.png">
+
+Google result
+
+<img width="401" alt="Screenshot 2021-06-17 at 2 30 14 AM" src="https://user-images.githubusercontent.com/76476308/122292835-0c719d00-cf14-11eb-81e0-d8adec87e582.png">
+
+We have the WSDL file of that web application. Now we can proceed with testing of web services, for that we require some tools as mentioned below:
+            
+            1.SOAP UI -  with this tool, we can load WSDL file and see all methods consists by Web service and proceed with testing of all those methods.
+            2.Burp Suite- It’s a proxy tool and you can configure SOAP UI with this tool to play with web services request/response.
+          
+# Grey box testing
+For a Grey Box assessment, the penetration tester will need sample requests for each method employed by the web service along with the Web Service Description Language (WSDL) file.
+
+            1.Require WSDL file/SOAP UI project.
+            2.Sample request/response.
+            3.Types of information being requested/consumed.
+            4.Authentication Information – if authentication is implemented in WS.
+            
+# White box testing
+In this, you will have every information related to WS which is going to be tested.
+
+# Let’s begin with SOAP UI tool
+# Case: 
+Consider it’s a black box testing and you do not have any details.
+1.Start fingerprinting to find associated WSDL file. Like (use google dork to find wsdl)
+
+<img width="401" alt="Screenshot 2021-06-17 at 2 30 14 AM" src="https://user-images.githubusercontent.com/76476308/122293447-a0dbff80-cf14-11eb-9057-fd091a04c604.png">
+
+2.Extract the WSDL file, once you have the WSDL file then you need to open with SOAP UI tool.
+
+<img width="397" alt="Screenshot 2021-06-17 at 2 35 49 AM" src="https://user-images.githubusercontent.com/76476308/122293553-c10bbe80-cf14-11eb-9be5-d57cdd50af33.png">
+
+3.Web service has been loaded with all its services and methods inside it.
+
+<img width="373" alt="Screenshot 2021-06-17 at 2 36 43 AM" src="https://user-images.githubusercontent.com/76476308/122293720-ee586c80-cf14-11eb-83f8-5b729a73ee94.png">
+
+4.Click on “+” button to see all the methods exist in WS.
+
+<img width="284" alt="Screenshot 2021-06-17 at 2 37 07 AM" src="https://user-images.githubusercontent.com/76476308/122293743-f57f7a80-cf14-11eb-8415-6e78bd882f95.png">
+
+5.Now expand methods and click on request button, you will see xml request in form of SOAP message which you can send with your test data and observe the response. Based on that you can start you with testing.
+
+<img width="398" alt="Screenshot 2021-06-17 at 2 38 00 AM" src="https://user-images.githubusercontent.com/76476308/122293923-265faf80-cf15-11eb-96d5-8ecb08e6d5dc.png">
+
+Note:  As of now we don’t have valid data with us, because of that I’m getting status error- 500 Internal server error.Also, you can set up SOAP UI with Burp Suite. For that you need to configure proxy tab like below:
+
+<img width="514" alt="Screenshot 2021-06-17 at 2 39 17 AM" src="https://user-images.githubusercontent.com/76476308/122294018-4000f700-cf15-11eb-84d4-879174741a6a.png">
+
+Same address you need to add in your burp proxy as shown below then you will be able to capture the request in burp and can do manipulation with data.
+
+<img width="485" alt="Screenshot 2021-06-17 at 2 39 54 AM" src="https://user-images.githubusercontent.com/76476308/122294092-5444f400-cf15-11eb-8ab7-1d5be2432a89.png">
+
+Now capture the request and start testing-
+
+<img width="530" alt="Screenshot 2021-06-17 at 2 40 39 AM" src="https://user-images.githubusercontent.com/76476308/122294182-6e7ed200-cf15-11eb-84be-1cc217fe9081.png">
+
+# Grey box testing
+# Case
+In Grey box testing – you will have following information to begin with the testing.
+If SOAP UI project file is shared with you then directly you can import that file with SAOP UI tool. It will give you all related information to begin with the testing and proceed for the same.
+
+<img width="400" alt="Screenshot 2021-06-17 at 2 42 14 AM" src="https://user-images.githubusercontent.com/76476308/122294441-ad148c80-cf15-11eb-8456-946c993aca0e.png">
+
+And project file will be loaded into SOAP UI tool and you can access WS and its associated services.
+
+<img width="280" alt="Screenshot 2021-06-17 at 2 42 59 AM" src="https://user-images.githubusercontent.com/76476308/122294522-c1f12000-cf15-11eb-81bc-625e9861f1ce.png">
+
+a>If you have WSDL file and sample request/response with you. You can proceed with the testing as I already explain in black box testing tab.
+b>If web service is using any kind of authentication to receive the successful response. We can configure the authentication process in SOAP UI as shown below
+
+
+
+
          
 
 
