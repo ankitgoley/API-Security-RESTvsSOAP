@@ -114,6 +114,11 @@ Contains name of all the services provided by the service provider.
 <img width="400" alt="Screenshot 2021-06-17 at 2 22 48 AM" src="https://user-images.githubusercontent.com/76476308/122291849-ef889a00-cf12-11eb-865a-4a22a3dacdf6.png">
 
 
+# UDDI (Universal Description Discovery and Integration)
+UDDI is an XML-based standard for describing, publishing, and finding Web services. UDDI is a set of specifications defining a registry service for Web services and for other electronic and non-electronic services.
+
+A UDDI registry service is a Web service managing information about service providers, service implementations and service metadata. Providers list their Web services on the UDDI registry. Consumers then use UDDI to discover Web services suiting their requirements and obtain the service metadata needed to consume those services.
+
 
   
        
