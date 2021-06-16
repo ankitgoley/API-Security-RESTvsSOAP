@@ -250,10 +250,19 @@ We have uploaded the sample WADL file which comes with SOAP UI tool at following
 After this you require sample request(data) to begin with the testing process. If REST is using any kind of authentication, you can set up with SoapUI.
 
 <img width="400" alt="Screenshot 2021-06-17 at 2 51 00 AM" src="https://user-images.githubusercontent.com/76476308/122295508-e699c780-cf16-11eb-8ee6-dbbf533f4957.png">
-
+            
 You can start testing REST API with end point URL and sample request/response. We can also use POSTMAN tool for testing REST API.
             
+# Configuration with POSTMAN
+Enter End Point URL and choose method accordingly.
             
+<img width="489" alt="Screenshot 2021-06-17 at 2 54 51 AM" src="https://user-images.githubusercontent.com/76476308/122295933-6b84e100-cf17-11eb-9f20-2d61c9b4632c.png">
+           
+            
+            
+            
+            
+         
             
     
             
