@@ -119,6 +119,21 @@ UDDI is an XML-based standard for describing, publishing, and finding Web servic
 
 A UDDI registry service is a Web service managing information about service providers, service implementations and service metadata. Providers list their Web services on the UDDI registry. Consumers then use UDDI to discover Web services suiting their requirements and obtain the service metadata needed to consume those services.
 
+<img width="397" alt="Screenshot 2021-06-17 at 2 25 26 AM" src="https://user-images.githubusercontent.com/76476308/122292164-4e4e1380-cf13-11eb-807b-de83f5d2fe12.png">
+
+In the above image as you can see how service consumer is requesting for WSDL to consume services which was available or listed by service provider named as service registry (UDDI).
+Let’s take a simple scenario here- if a service consumer wants to use some sort of web service, then it must know the service provider. If a service provider validates a service consumer it will provide the WSDL file directly and then the service consumer creates a XML message to request for a required service in the form of a SOAP message and the service provider returns a service response.
+Other scenario- if a service consumer is not aware of the service provider, then it will go for UDDI and search for the required service. The UDDI returns with the list of service providers offering that service.
+Now choosing one service provider again the service consumer generates a XML message to request for a required service in the form of a SOAP message, as specified in the WSDL file of that service provider. The service provider then returns a service response. This is how a service consumer avail the required services which are available over the web.
+
+# Security Testing of SOAP Web Services - Setting up the testing environment
+The testing approach of web services is very much similar to the testing used in web applications. Web service security testing has been categorized in three types:
+            1.Black Box Testing
+            2.Grey Box Testing
+            3.White Box Testing
+         
+
+
 
   
        
